@@ -57,8 +57,6 @@ a {
 }
 
 .bg {
-  /*background-color: #575656;
-   background-color: #c0c0c0; */
   background-color: rgb(49, 49, 49);
   box-shadow: 0 0 15px rgba(51, 68, 255, 0.479);
 }
@@ -194,11 +192,8 @@ header a {
 
 #projects .card {
   width: 30%;
-  /* min-width: 300px; */
   padding: 1rem;
-  /* background-color: rgb(253, 253, 253); */
   background-color: #e2e2e2;
-
   border-radius: 2px;
   overflow: hidden;
   box-shadow: 0 0 1px #57606f;
@@ -256,24 +251,6 @@ header a {
 .skill i {
   font-size: 1.5rem;
   color: rgb(49, 49, 49);
-}
-
-progress[value] {
-  height: 1rem;
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-}
-
-progress[value]::-webkit-progress-bar {
-  background-color: rgb(236, 236, 236);
-  border-radius: 2px;
-}
-
-progress[value]::-webkit-progress-value {
-  background: var(--primary-color-light);
-  border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 /* Contact Form Area */
@@ -374,7 +351,6 @@ footer button {
   nav.responsive ul {
     display: block;
     background-color: rgb(49, 49, 49);
-    /*background-color: var(--primary-color-light); /********/
     position: absolute;
     width: 100%;
     left: 0;
@@ -411,10 +387,6 @@ footer button {
   .skill {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  progress[value] {
-    width: 100%;
   }
 
   form {
@@ -468,7 +440,7 @@ footer button {
   nav.responsive ul {
     display: block;
     background-color: rgb(49, 49, 49);
-    /* background-color: rgb(66, 82, 255); /*******/
+
     position: absolute;
     width: 100%;
     left: 0;
@@ -510,10 +482,6 @@ footer button {
   .skill {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  progress[value] {
-    width: 100%;
   }
 
   #backToTop {
