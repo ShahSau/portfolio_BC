@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class="navbar-main">
+        <div class="navbar-main bg">
             <div class="logo">
                 <h2><a href="./index.html"><img src="s.png" alt="logo"></a></h2>
             </div>
@@ -38,6 +39,130 @@
             <h1>I am a <span> web developer</span></h1>
         </section>
     </header>
+
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="projects-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29tcHV0ZXJ8fHx8fHwxNjM0MDU3NTkx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
+                            alt="Projects Image" />
+                        <div class="card-text">
+                            <h3>Card Text One</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequatur totam nostrum doloremque ipsum voluptatum ut,
+                                vitae quo recusandae quidem at.
+                            </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1607804964005-7546ddda3403?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8c3R1ZGlvfHx8fHx8MTYzNDA1NzY1MQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
+                            alt="Projects Image" />
+                        <div class="card-text">
+                            <h3>Card Text Two</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequatur totam nostrum doloremque ipsum voluptatum ut,
+                                vitae quo recusandae quidem at.
+                            </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1602248145578-9e5bc50c77b3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8Z2FkZ2V0fHx8fHx8MTYzNDA1NzczNQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
+                            alt="Projects Image" />
+                        <div class="card-text">
+                            <h3>Card Text Three</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequatur totam nostrum doloremque ipsum voluptatum ut,
+                                vitae quo recusandae quidem at.
+                            </p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h1>Experience</h1>
+                <img src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTYzNDEyMDU4OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
+                    alt="experience Image" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+                    itaque rerum esse aperiam incidunt, laborum minima aliquam eum
+                    distinctio in facere, ad sint voluptatibus autem veritatis at
+                    consequatur dolores consequuntur? Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Sapiente itaque rerum esse aperiam
+                    incidunt, laborum minima aliquam eum distinctio in facere, ad sint
+                    voluptatibus autem veritatis at consequatur dolores consequuntur?
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h1>Skills</h1>
+                <div class="skill-items">
+                    <div class="skill">
+                        <i class="icon-vector"></i>
+                        <p>UI / UX Design</p>
+                        <progress value="90" max="100">90%</progress>
+                    </div>
+                    <div class="skill">
+                        <i class="icon-file-code"></i>
+                        <p>Programming</p>
+                        <progress value="75" max="100">75%</progress>
+                    </div>
+                    <div class="skill">
+                        <i class="icon-github-circled"></i>
+                        <p>Git</p>
+                        <progress value="85" max="100">85%</progress>
+                    </div>
+                    <div class="skill">
+                        <i class="icon-medium"></i>
+                        <p>Writing</p>
+                        <progress value="70" max="100">70%</progress>
+                    </div>
+                    <div class="skill">
+                        <i class="icon-bullseye"></i>
+                        <p>Marketing & Promotion</p>
+                        <progress value="75" max="100">75%</progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <form>
+                    <div class="form-content">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="form-content">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="form-content">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button id="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p> shahriar 2021</p>
+            <button id="backToTop">
+                <span class="material-icons"> arrow_upward</span>Top
+            </button>
+        </footer>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
