@@ -224,18 +224,6 @@ header a {
   float: right;
   margin-left: 32px;
 }
-#experience .img3 {
-  float: right;
-  margin-left: 32px;
-}
-#experience .img2 {
-  float: left;
-  margin-right: 32px;
-}
-/* #experience .text-2 {
-  float: right;
-  margin-left: 32px;
-} */
 
 .skill-items {
   display: flex;
