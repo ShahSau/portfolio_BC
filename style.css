@@ -178,7 +178,7 @@ header a {
 /** ***/
 /* Main Area */
 
-#experience,
+#about,
 #skills,
 #contact {
   min-height: 500px;
@@ -220,7 +220,7 @@ header a {
   cursor: pointer;
 }
 
-#experience .img1 {
+#about .img1 {
   float: right;
   margin-left: 32px;
 }
@@ -370,11 +370,11 @@ footer button {
     padding: 1rem 2rem;
   }
 
-  #experience {
+  #about {
     display: block;
   }
 
-  #experience img {
+  #about img {
     width: 100%;
     padding-bottom: 2rem;
   }
@@ -464,7 +464,7 @@ footer button {
   }
 
   #projects,
-  #experience,
+  #about,
   #skills,
   #contact {
     padding: 1rem;
