@@ -1,12 +1,13 @@
 :root {
   --primary-color: rgb(66, 82, 255);
   --primary-color-light: rgb(88, 102, 255);
-  --primary-color-dark: rgb(38, 44, 110);
+  --black-background: #000;
   --secondary-color: #23d5ab;
-
   --heading-text-color-h3: #2f3542;
   --heading-text-color: #f0fff0;
   --body-text-color: #57606f;
+  --nav-bg-background: rgb(49, 49, 49);
+  --white-color: #fff;
 }
 * {
   margin: 0;
@@ -17,7 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  background-color: #000;
+  background-color: var(--black-background);
 }
 
 html {
@@ -57,7 +58,7 @@ a {
 }
 
 .bg {
-  background-color: rgb(49, 49, 49);
+  background-color: var(--nav-bg-background);
   box-shadow: 0 0 15px rgba(51, 68, 255, 0.479);
 }
 /* Header Area */
@@ -119,7 +120,7 @@ header nav ul li:hover:after {
 
 header a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
   font-size: large;
 }
 
@@ -146,6 +147,7 @@ header a {
   background-image: linear-gradient(45deg, #eac9b8, #473857, #7a94c7, #ee7c58);
   background-size: 200%;
   background-repeat: repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -175,7 +177,24 @@ header a {
   font-weight: 500;
 }
 
-/** ***/
+.progress-container {
+  display: none;
+  width: 100%;
+  height: 5px;
+  background: var(--primary-color-light);
+  position: fixed;
+  z-index: 900;
+  top: 108px;
+}
+
+.progress-bar {
+  height: 5px;
+  background: var(--secondary-color);
+  width: 0%;
+  position: absolute;
+  z-index: 1000;
+}
+
 /* Main Area */
 
 #about,
@@ -196,7 +215,7 @@ header a {
   background-color: #e2e2e2;
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 0 1px #57606f;
+  box-shadow: 0 0 1px var(--body-text-color);
 }
 
 #projects .card img {
@@ -243,21 +262,34 @@ header a {
 }
 
 .skill:hover {
-  background-color: white;
+  background-color: var(--white-color);
   border: none;
   box-shadow: 5px 5px 10px rgb(207, 207, 207);
 }
 
-.skill i {
-  font-size: 1.5rem;
-  color: rgb(49, 49, 49);
+progress[value] {
+  height: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgb(236, 236, 236);
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: var(--primary-color-light);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 /* Contact Form Area */
 
 #contact {
-  background-color: #000;
-  color: white;
+  background-color: var(--black-background);
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -293,7 +325,7 @@ form textarea {
 form button {
   background-color: var(--primary-color);
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color);
   border-style: none;
   border-radius: 5px;
   padding: 1rem 2rem;
@@ -303,7 +335,7 @@ form button {
 }
 form button:hover {
   color: var(--primary-color);
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 #backToTop {
   position: fixed;
@@ -322,7 +354,7 @@ footer button {
   background-color: #7a94c7;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   border-style: none;
   border-radius: 5px;
   padding: 1rem;
@@ -337,7 +369,7 @@ footer button {
   #Burger {
     display: block;
     background-color: transparent;
-    color: white;
+    color: var(--white-color);
     border: none;
   }
   #Burger .material-icons {
@@ -350,7 +382,7 @@ footer button {
 
   nav.responsive ul {
     display: block;
-    background-color: rgb(49, 49, 49);
+    background-color: var(--nav-bg-background);
     position: absolute;
     width: 100%;
     left: 0;
@@ -387,6 +419,10 @@ footer button {
   .skill {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  progress[value] {
+    width: 100%;
   }
 
   form {
@@ -439,7 +475,7 @@ footer button {
 
   nav.responsive ul {
     display: block;
-    background-color: rgb(49, 49, 49);
+    background-color: var(--nav-bg-background);
 
     position: absolute;
     width: 100%;
@@ -482,6 +518,10 @@ footer button {
   .skill {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  progress[value] {
+    width: 100%;
   }
 
   #backToTop {
