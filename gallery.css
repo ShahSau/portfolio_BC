@@ -60,11 +60,10 @@ a {
 }
 
 .bg {
-  /*background-color: #575656;
-     background-color: #c0c0c0; */
   background-color: rgb(49, 49, 49);
   box-shadow: 0 0 15px rgba(51, 68, 255, 0.479);
 }
+
 /* Header Area */
 
 header {
@@ -151,6 +150,7 @@ header a {
   background-image: linear-gradient(45deg, #eac9b8, #473857, #7a94c7, #ee7c58);
   background-size: 200%;
   background-repeat: repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -230,7 +230,7 @@ header a {
   object-fit: cover;
   filter: blur(0px);
   transition: filter 0.3s ease-in;
-  /* transform: scale(1.1); */
+  
 }
 
 .grid-item {
@@ -294,7 +294,7 @@ footer button {
 }
 
 /** media query*** /
-/* Tablet Support */
+/* less than 900 px */
 
 @media (max-width: 899px) {
   #Burger {
@@ -387,7 +387,7 @@ footer button {
   }
 }
 
-/* Mobile Support */
+/* less than 576px */
 
 @media (max-width: 576px) {
   .container {

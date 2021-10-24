@@ -363,7 +363,7 @@ footer button {
 }
 
 /** media query*** /
-/* Tablet Support */
+/* lees than 900px */
 
 @media (max-width: 899px) {
   #Burger {
@@ -460,7 +460,7 @@ footer button {
   }
 }
 
-/* Mobile Support */
+/* less than 576px */
 
 @media (max-width: 576px) {
   .container {
